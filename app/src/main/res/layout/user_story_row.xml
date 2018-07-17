@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/userStoryRowCardView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    app:cardCornerRadius="3dp"
+                                    card_view:cardBackgroundColor="#00c853"
+                                    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/userStoryRowNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/droid_sans"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/test_name_of_user_story"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/userStoryRowCompletedImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:cropToPadding="true"
+                android:scaleType="centerInside"
+                />
+
+            <ImageButton
+                android:id="@+id/userStoryRowDeleteImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:cropToPadding="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_delete_white"
+                />
+        </android.widget.LinearLayout>
+
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/droid_sans"
+                android:paddingLeft="5dp"
+                android:text="Cost: "
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/userStoryRowPointsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="-1"
+                android:fontFamily="@font/droid_sans"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:text="1 point"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+
+        </android.widget.LinearLayout>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/userStoryRowDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="-1"
+                android:fontFamily="@font/droid_sans"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:text="@string/test_desc"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+        </android.widget.LinearLayout>
+
+        <android.widget.LinearLayout
+            android:id="@+id/userStoryRowAssignedToRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="17dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="2dp"
+                android:src="@drawable/ic_sprint_row_white"/>
+
+            <TextView
+                android:id="@+id/userStoryRowAssignedToMemberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="-1"
+                android:fontFamily="@font/droid_sans"
+                android:paddingLeft="4dp"
+                android:paddingRight="5dp"
+                android:text="hello"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+
+        </android.widget.LinearLayout>
+
+        <TextView
+            android:id="@+id/userStoryCompletedDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="-1"
+            android:fontFamily="@font/droid_sans"
+            android:paddingLeft="21dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/test_completed_date"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

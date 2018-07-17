@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/groupChatMessageRowContainerRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/groupChatMessageRowTimestampRightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:text="@string/test_date_dec_20_2018_2_15pm"
+                android:textAlignment="viewEnd"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/groupChatMessageRowContentRightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/message_row_rounded_rect_red"
+                android:padding="15dp"
+                android:text="@string/one_hundred_fourty_char_string"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/groupChatMessageRowContainerLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/groupChatMessageRowLeftDetailsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/groupChatMessageRowTimestampLeftTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_date_dec_20_2018_2_15pm"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/groupChatMessageRowSentByLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/test_name_louis_george_maurice_adolphe_roche_albert"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/groupChatMessageRowContentLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_row_rounded_rect_gray"
+            android:padding="15dp"
+            android:text="@string/one_hundred_fourty_char_string"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

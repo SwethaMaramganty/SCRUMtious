@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bc2222</color>
+    <color name="colorPrimaryDark">#8f1b1b</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="colorIndigo">#3f51b5</color>
+    <color name="sign_up_screen_text_fileld">#ffffff</color>
+    <color name="login_email_text_field_color">#ffffff</color>
+    <color name="project_tabs_color">#ffffff</color>
+    <color name="project_tab_selected_color">#ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="login_screen_bg_color">#be2b2b</color>
+    <color name="app_typo_logo_white">#ffffff</color>
+    <color name="project_list_screen_bg_color">#f8f8f8</color>
+
+    <color name="task_row_in_progress_color">#FFC107</color>
+    <color name="task_row_completed_color">#8bc34a</color>
+    <color name="task_row_not_started_color">#f44336</color>
+    <color name="group_chat_message_input_bg_color">#f7f7f7</color>
+    <color name="group_chat_right_message_bg_color">#d73838</color>
+    <color name="group_chat_left_message_bg_color">#d6d4d4</color>
+</resources>

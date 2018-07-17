@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.mvp.scrumtious.scrumtious.view_impl.TaskBoardFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/taskBoardFragmentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        />
+
+    <LinearLayout
+    android:id="@+id/taskBoardFragmentNoTasksEmptyStateView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#9B9B9B"
+        android:layout_marginBottom="50dp"
+        android:text="@string/no_tasks_to_show_here"
+        android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/sprintListDrawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="ca.mvp.scrumtious.scrumtious.view_impl.SprintListActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/sprintListToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:theme="@style/IndividualProjectToolbar"
+                app:title="Sprint List">
+
+                <ImageButton
+                    android:id="@+id/sprintListLogoutImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_logout"/>
+
+                <ImageButton
+                    android:id="@+id/sprintListSortImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_sort"
+                    android:visibility="gone"/>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sprintListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="?actionBarSize"
+            android:layout_above="@id/sprintListLinearLayout"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/sprintListLinearLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/add_sprint"
+                    android:textColor="@color/white"
+                    android:onClick="onClickAddSprint"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sprintListActivityNoSprintsEmptyStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frown"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#9B9B9B"
+                android:layout_marginBottom="50dp"
+                android:text="@string/looks_like_you_have_no_sprints"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/sprintListNavigationView"
+        app:menu="@menu/project_drawer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@color/white"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        app:itemIconTint="@color/white"
+        app:headerLayout="@layout/project_drawer_header">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
